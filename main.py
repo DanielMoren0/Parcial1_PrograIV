@@ -4,10 +4,10 @@ import ui.mostrar
 def main():
     limite_registros = input("Digite el número de registros que desea consultar:")
     nombre_departamento = input("Ingrese el departamento que desea consultar:")
-    #nombre_municipio = input("Ingrese el municipio que desea consultar:")
-    #nombre_cultivo = input("Ingrese el cultivo que desea consultar:")
+    nombre_municipio = input("Ingrese el municipio que desea consultar:")
+    nombre_cultivo = input("Ingrese el cultivo que desea consultar:")
 
-    data_frame = api.datos.obtener_datos(limite_registros, nombre_departamento.upper())
+    data_frame = api.datos.obtener_datos(limite_registros, nombre_departamento.upper(), nombre_municipio.upper(), nombre_cultivo.title())
 
     ui.mostrar.mostrar_datos(data_frame)
 

@@ -9,8 +9,6 @@ def main():
 
     data_frame = api.datos.obtener_datos(limite_registros, nombre_departamento.upper())
 
-    data_frame = api.datos.obtener_datos(limite_registros, nombre_departamento.upper())
-
     ui.mostrar.mostrar_datos(data_frame)
 
     ui.mostrar.mostrar_mediana(data_frame, "ph_agua_suelo_2_5_1_0")
